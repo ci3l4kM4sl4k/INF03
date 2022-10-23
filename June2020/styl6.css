@@ -1,0 +1,50 @@
+*{
+    font-family: Georgia;
+}
+
+#pierwszyBlok, #drugiBlok{
+    background-color: #3CB371;
+    color: white;
+    height: 100px;
+    width: 40%;
+}
+
+#trzeciBlok{
+    background-color: #3CB371;
+    height: 100px;
+    width: 20%;
+}
+
+.dzien{
+    background-color: #FFDAB9;
+    width: 170px;
+    height: 90px;
+    margin: 5px;
+    border: 1px solid #3CB371;
+}
+
+footer{
+    background-color: #3CB371;
+    color: white;
+}
+
+h6{
+    text-align: right;
+}
+
+form{
+    padding: 30px;
+}
+
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+}
+
+#blokGłówny{
+    display: flex;
+}
