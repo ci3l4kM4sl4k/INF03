@@ -1,0 +1,7 @@
+Zadanie1: SELECT `dataZadania`, `miesiac`, `wpis` FROM `zadania` WHERE `miesiac` = 8;
+
+Zadanie2: SELECT `miesiac`, `rok` FROM `zadania` WHERE `dataZadania` = '2020-08-01';
+
+Zadanie3: SELECT `wpis` FROM `zadania` WHERE `wpis` LIKE '%o';
+
+Zadanie4: UPDATE `zadania` SET `wpis` = 'Wycieczka: Karkonosze' WHERE `dataZadania` = '2020-08-27';
