@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Kochamy kawę</title>
+        <link rel="stylesheet" href="styl.css"/>
+    </head>
+
+    <body>
+        <section id="gora">
+            <section id="menu">
+                <a href="index.html">Strona główna</a>
+                <a href="zamowienia.html">Zamówienia</a>
+                <a href="blog.html">Blog</a>
+                <a href="http://gatunki-kawy.pl/">Gatunki kawy</a>
+            </section>
+
+            <section id="logo">
+                <img src="logo.png" alt="Kawa"/>
+            </section>
+        </section>
+
+        <section id="baner">
+            <h1>Sklep z kawą</h1>
+        </section>
+
+        <section id="nizej">
+            <section id="lewy">
+                Podaj numer kawy: <input type="number" id="numer"/>
+                <br/>
+                Podaj wagę w dekagramach: <input type="number" id="waga"/>
+                <br/>
+                <input type="button" value="Zamów" onclick="skrypt()"/>
+                <br/>
+                <p id="wypisz"></p>
+
+                <script type="text/javascript">
+                    function skrypt(){
+                        let numer = parseInt(document.getElementById("numer").value);
+                        let waga = parseInt(document.getElementById("waga").value);
+                        let koszt;
+
+                        if(numer == 1){
+                            koszt = waga * 5;
+                        }else if(numer == 2){
+                            koszt = waga * 7;
+                        }else if(numer == 4){
+                            koszt = waga * 6;
+                        }else{
+                            koszt = 0;
+                        }
+
+                        document.getElementById("wypisz").innerHTML="Koszt zamówienia wynosi: "+koszt+" zł";
+                    }
+                </script>
+            </section>
+
+            <section id="prawy">
+                <h3>Oferta</h3>
+                <ul>
+                    <li>Arabica</li>
+                    <li>Robusta</li>
+                    <li id="trzeci">bezkofeinowa</li>
+                    <li>zielona</li>
+                </ul>
+            </section>
+        </section>
+
+        <footer id="stopka">
+            Stronę przygotował: <strong>***********</strong>
+        </footer>
+    </body>
+</html>
