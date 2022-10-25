@@ -1,0 +1,68 @@
+*{
+    font-family: Georgia;
+}
+
+#baner{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#pierwszy, #drugi{
+    background-color: #A26475;
+    color: white;
+    width: 30%;
+    height: 300px;
+}
+
+#trzeci{
+    background-color: #A26475;
+    color: white;
+    width: 40%;
+    height: 300px;
+    text-align: right;
+}
+
+#panelGlowny{
+    background-color: #F0EAE2;
+    padding: 50px;
+}
+
+#stopka{
+    background-color: #824555;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+table, td, th{
+    border: 2px solid #69293A;
+    padding: 7px;
+    border-collapse: collapse;
+}
+
+ul{
+    list-style: square;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+
+body{
+    margin: 0;
+}
+
+#paneleGorne{
+    display: flex;
+}
