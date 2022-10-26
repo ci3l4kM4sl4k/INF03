@@ -1,7 +1,7 @@
-Zapytanie1: 
+Zapytanie1: INSERT INTO `filmy` (`id`, `gatunki_id`, `rezyserzy_id`, `tytul`, `rok`, `ocena`) VALUES (NULL, '5', '5', 'Suburbicon', '2017', '5');
 
-Zapytanie2: 
+Zapytanie2: SELECT `filmy`.`tytul`,`gatunki`.`nazwa` FROM `filmy` INNER JOIN `gatunki` ON `filmy`.`gatunki_id` = `gatunki`.`id` WHERE `filmy`.`ocena` = 6;
 
-Zapytanie3: 
+Zapytanie3: SELECT `tytul`,`rok` FROM `filmy` WHERE `gatunki_id` = 3 AND `ocena` = 5;
 
-Zapytanie4: 
+Zapytanie4: CREATE TABLE `aktorzy`( `id` int NOT NULL, `imie` text, `nazwisko` text );
