@@ -1,0 +1,59 @@
+*{
+    font-family: Helvetica;
+}
+
+#panelLewy{
+    background-color: Navy;
+    color: white;
+    width: 25%;
+    height: 700px;
+    float: left;
+}
+
+#pierwszy{
+    background-color: RoyalBlue;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+    float: left;
+}
+
+#drugi{
+    background-color: SteelBlue;
+    height: 300px;
+    width: 75%;
+    float: left;
+}
+
+#trzeci{
+    background-color: Royalblue;
+    height: 300px;
+    width: 75%;
+    text-align: center;
+    float: left;
+}
+
+#stopka{
+    background-color: Steelblue;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+form{
+    padding: 30px;
+    line-height: 3;
+}
+
+form:hover{
+    background-color: DeepSkyBlue;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+}
