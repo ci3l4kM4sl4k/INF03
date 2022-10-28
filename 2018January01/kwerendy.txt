@@ -1,7 +1,7 @@
-Zadanie1: 
+Zadanie1: SELECT `id`, `tytul`, `tresc` FROM `ogloszenie` WHERE `kategoria` = 1;
 
-Zadanie2: 
+Zadanie2: SELECT `uzytkownik`.`telefon` FROM `uzytkownik` INNER JOIN `ogloszenie` ON `uzytkownik`.`id` = `ogloszenie`.`uzytkownik_id` WHERE `ogloszenie`.`id` = 1;
 
-Zadanie3: 
+Zadanie3: CREATE USER `moderator`@`localhost` IDENTIFIED BY 'qwerty';
 
-Zadanie4: 
+Zadanie4: GRANT SELECT, DELETE ON `ogloszenia`.`ogloszenie` TO 'moderator'@'localhost';
