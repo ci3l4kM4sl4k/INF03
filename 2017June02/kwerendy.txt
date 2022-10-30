@@ -1,0 +1,5 @@
+Zadanie1: SELECT `id`, `imie`, `nazwisko`, `choroba` FROM `pacjenci`;
+
+Zadanie2: SELECT `imie`, `nazwisko`, `leki_przepisane`, `opis` FROM `pacjenci` WHERE `id` = 1;
+
+Zadanie3: SELECT `imie`, `nazwisko` FROM `pacjenci` WHERE `choroba` = 'J05';
