@@ -1,0 +1,38 @@
+#baner{
+    background-color: RGB(66, 22, 42);
+    color: white;
+    font-size: 140%;
+    text-align: center;
+    height: 100px;
+}
+
+#lewy{
+    background-color: RGB(142, 115, 110);
+    width: 30%;
+    height: 600px;
+    color: white;
+}
+
+#prawy{
+    background-color: RGB(230, 230, 230);
+    width: 70%;
+    height: 600px;
+    font-size: 120%;
+}
+
+#stopka{
+    background-color: RGB(142, 115,110);
+    color: white;
+    text-align: right;
+    height: 100px;
+}
+
+
+
+#stopka{
+    width: 100%;
+}
+
+#lewy, #prawy, #stopka{
+    float: left;
+}
