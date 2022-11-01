@@ -1,0 +1,5 @@
+Zadanie1: SELECT `id`, `marka`, `model` FROM `samochody`;
+
+Zadanie2: SELECT `samochody_id`, `klient` FROM `zamowienia`;
+
+Zadanie3: SELECT * FROM `samochody` WHERE `marka` = 'Fiat';
