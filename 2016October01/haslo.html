@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Miernik jakości hasła</title>
+        <link rel="stylesheet" href="styl.css"/>
+
+        <script type="text/javascript">
+            function f1(){
+                let haslo = document.getElementById("haslo").value;
+                let zawieraCyfry = Boolean(haslo.match(/[0-9]/));
+
+                let wypisz = document.getElementById("prawy");
+
+                if(haslo == ""){
+                    wypisz.innerHTML+="<p style='color: red;'>WPISZ HASŁO!</p>";
+                }else if(haslo.length >= 7 && zawieraCyfry == true){
+                    wypisz.innerHTML+="<p style='color: green;'>DOBRE</p>";
+                }else if(haslo.length >=4 && haslo.length <= 6 && zawieraCyfry == true){
+                    wypisz.innerHTML+="<p style='color: blue;'>ŚREDNIE</p>";
+                }else{
+                    wypisz.innerHTML+="<p style='color: yellow;'>SŁABE</p>";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <section id="baner">
+            <h1><a href="index.html">Sprawdź swoje hasło</a></h1>
+        </section>
+
+        <section id="lewy">
+            <h2>Wybierz</h2>
+            <ol>
+                <li><a href="haslo.html">Sprawdź hasło</a></li>
+                <li><a href="zasady.html">Zasady tworzenia hasła</a></li>
+            </ol>
+        </section>
+
+        <section id="prawy">
+            <img src="haslo.png"/>
+            <p>Twoje hasło: <input type="password" id="haslo"/><input type="button" value="Sprawdź" onclick="f1()"/></p>
+            
+            
+        </section>
+
+        <section id="stopka">
+            <h3>Miernik jakości hasła</h3>
+            <p>Stronę opracował: ***********</p>
+        </section>
+    </body>
+</html>
