@@ -1,0 +1,7 @@
+Zadanie1: SELECT `imie`, `nazwisko` FROM `uczen`;
+
+Zadanie2: SELECT `imie`, `nazwisko` FROM `uczen` WHERE `id` = 2;
+
+Zadanie3: SELECT `ocena` FROM `ocena` WHERE `uczen_id` = 2 AND `przedmiot_id` = 1;
+
+Zadanie4: SELECT AVG(`ocena`) FROM `ocena` WHERE `uczen_id` = 2 AND `przedmiot_id` = 1;
